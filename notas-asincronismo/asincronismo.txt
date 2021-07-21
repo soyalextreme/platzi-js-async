@@ -1,0 +1,11 @@
+INTRODUCCION AL ASINCRONISMO
+
+JS es => no bloqueante y con un solo hilo
+
+Event loop => maneja y coordina la pila de ejecucion y la cola de tareas.
+
+Memory heap => espacio en memoria
+
+Pila de ejecuccion => 
+
+Cola de tareas => callbacks y funciones que necesitan algun proceso
