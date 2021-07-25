@@ -1,6 +1,6 @@
 const somethingWillHappen = () => {
   return new Promise((resolve, reject) => {
-    if (false) {
+    if (true) {
       resolve("HEY");
     } else {
       reject("UPS :( ");
@@ -21,14 +21,14 @@ const somethingWillHappen2 = () => {
   });
 };
 
-somethingWillHappen()
-  .then((response) => console.log(response))
-  .catch((error) => console.error(error));
+// somethingWillHappen()
+//   .then((response) => console.log(response))
+//   .catch((error) => console.error(error));
 
-somethingWillHappen2()
-  .then((response) => console.log(response))
-  .catch((error) => console.error(error));
+// somethingWillHappen2()
+//   .then((response) => console.log(response))
+//   .catch((error) => console.error(error));
 
-Promise.all([somethingWillHappen, somethingWillHappen2])
+Promise.all([somethingWillHappen(), somethingWillHappen2()])
   .then((response) => console.log("Array of results", response))
   .catch((error) => console.error(error));
