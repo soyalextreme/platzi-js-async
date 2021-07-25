@@ -42,5 +42,3 @@ fetchData(URI, (error1, data1) => {
 });
 
 
-const name = "Alejandro Andrade";
-console.log(`Hola mi nombre es: ${name}`);
